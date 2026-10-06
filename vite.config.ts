@@ -8,6 +8,8 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
+      tsconfigPath: "./tsconfig.app.json",
+      entryRoot: "src",
       insertTypesEntry: true,
     }),
   ],
@@ -15,12 +17,22 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "MyUI",
-      formats: ["es"],
-      fileName: "my-ui",
+      formats: ["es", "cjs"],
+      fileName: (format) => `my-ui.${format === "es" ? "js" : "cjs"}`,
     },
 
     rollupOptions: {
-      external: ["react", "react-dom"],
+      // Peer dependencies that shouldn't be bundled into the library
+      external: ["react", "react-dom", "react/jsx-runtime"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+          "react/jsx-runtime": "jsxRuntime",
+        },
+      },
     },
+    sourcemap: true,
+    copyPublicDir: false,
   },
 });
