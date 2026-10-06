@@ -19,6 +19,7 @@ export default defineConfig({
       name: "MyUI",
       formats: ["es", "cjs"],
       fileName: (format) => `my-ui.${format === "es" ? "js" : "cjs"}`,
+      cssFileName: "style",
     },
 
     rollupOptions: {
