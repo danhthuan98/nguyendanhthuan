@@ -3,22 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/my-ui.cjs",
+  "main": "./dist/my-ui.umd.js",
   "module": "./dist/my-ui.js",
   "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/my-ui.js",
-      "require": "./dist/my-ui.cjs"
-    },
-    "./style.css": "./dist/style.css"
-  },
-  "sideEffects": [
-    "**/*.css"
+  "files": [
+    "dist"
   ],
   "peerDependencies": {
     "react": ">=18",
