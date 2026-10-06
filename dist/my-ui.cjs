@@ -1,0 +1,2 @@
+Object.defineProperty(exports,Symbol.toStringTag,{value:`Module`});let e=require("react/jsx-runtime");function t({children:t,...n}){return(0,e.jsx)(`button`,{...n,children:t})}exports.Button=t;
+//# sourceMappingURL=my-ui.cjs.map
