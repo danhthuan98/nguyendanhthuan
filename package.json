@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/my-ui.umd.js",
+  "main": "./dist/my-ui.js",
   "module": "./dist/my-ui.js",
   "types": "./dist/index.d.ts",
   "files": [
