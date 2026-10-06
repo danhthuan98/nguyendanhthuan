@@ -1,0 +1,19 @@
+.myui-btn {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+.myui-btn--primary {
+  background: #2563eb;
+  color: #fff;
+}
+.myui-btn--secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+.myui-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

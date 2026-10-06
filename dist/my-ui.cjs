@@ -1,0 +1,1 @@
+Object.defineProperty(exports,Symbol.toStringTag,{value:`Module`});let e=require("react/jsx-runtime");function t({variant:t=`primary`,className:n=``,...r}){return(0,e.jsx)(`button`,{className:`myui-btn myui-btn--${t} ${n}`,...r})}exports.Button=t;
