@@ -3,27 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/my-ui.js",
-  "module": "./dist/my-ui.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "peerDependencies": {
-    "react": ">=18",
-    "react-dom": ">=18"
-  },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:types && npm run build:js",
-    "build:types": "tsc -p tsconfig.build.json",
-    "build:js": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": ">=18",
-    "react-dom": ">=18"
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -37,7 +25,6 @@
     "globals": "^17.12.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.69.0",
-    "vite": "^8.3.0",
-    "vite-plugin-dts": "^5.1.2"
+    "vite": "^8.3.0"
   }
 }
