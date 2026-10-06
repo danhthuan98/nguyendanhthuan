@@ -1,3 +1,4 @@
 export { Button } from "./components/Button";
 export type { ButtonProps } from "./components/Button";
-export const TEST = "hello";
+export declare const TEST = "hello";
+//# sourceMappingURL=index.d.ts.map

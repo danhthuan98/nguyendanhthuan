@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/my-ui.umd.js",
+  "main": "./dist/my-ui.js",
   "module": "./dist/my-ui.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -15,7 +15,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build:js": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
