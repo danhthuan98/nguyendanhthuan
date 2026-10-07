@@ -1,2 +1,3 @@
 export { Button } from './components/Button';
+export { CameraScreen } from './components/Camera';
 export type { ButtonProps } from './components/Button';

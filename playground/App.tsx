@@ -1,15 +1,10 @@
-import { Button } from "../src";
+// import { Button } from "../src";
+import { CameraScreen } from "../src";
 
 function App() {
   return (
     <>
-      <div style={{ padding: 24, display: "flex", gap: 12 }}>
-        <Button size="sm">Small</Button>
-        <Button>Medium</Button>
-        <Button size="lg" variant="outline">
-          Large
-        </Button>
-      </div>
+      <CameraScreen />
     </>
   );
 }
